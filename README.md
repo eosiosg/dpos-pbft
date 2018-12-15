@@ -26,7 +26,8 @@ the topology can be easily adjusted in k8s/n-nodes/configmap.yaml
 
 find eosio cluster ip adress use:
 ```
-kubectl get pod -o wide```
+kubectl get pod -o wide
+```
 
 update nginx proxy pass ip in nginx.yaml
 ```
