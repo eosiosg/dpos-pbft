@@ -1,0 +1,134 @@
+apiVersion: v1
+kind: Service
+metadata:
+  name: nodes
+  labels:
+    app: nodes
+spec:
+  ports:
+  - port: 8888
+    protocol: TCP
+  clusterIP: None
+  selector:
+    app: nodes
+
+---
+
+apiVersion: v1
+kind: Service
+metadata:
+  name: loadbalancer
+spec:
+  selector:
+    app: nodes
+    role: nginx
+  ports:
+  - name: p2p
+    protocol: TCP
+    port: 9876
+    targetPort: 9876
+  - name: api
+    protocol: TCP
+    port: 8888
+    targetPort: 80
+  type: LoadBalancer
+
+---
+
+apiVersion: apps/v1
+kind: StatefulSet
+metadata:
+  name: eosio
+spec:
+  selector:
+    matchLabels:
+      app: nodes
+  serviceName: nodes
+  replicas: 1
+  template:
+    metadata:
+      labels:
+        app: nodes
+        producer: eosio
+    spec:
+      terminationGracePeriodSeconds: 10
+      containers:
+      - name: eosio
+        image: deadlock/eos-dpos-pbft:v0.3.11
+        ports:
+        - containerPort: 8888
+        - containerPort: 9876
+        envFrom:
+          - configMapRef:
+              name: n-nodes-config
+        command: ["/bin/bash", "-c"]
+        args:
+          - export profile_id=${HOSTNAME##*-} ;
+            export profile_name=eosio ;
+            nodeos --producer-name=${profile_name} ${!profile_name} ;
+---
+
+apiVersion: apps/v1
+kind: StatefulSet
+metadata:
+  name: bp
+spec:
+  selector:
+    matchLabels:
+      app: nodes
+  serviceName: nodes
+  replicas: 13
+  template:
+    metadata:
+      labels:
+        app: nodes
+    spec:
+      terminationGracePeriodSeconds: 10
+      containers:
+      - name: bp
+        image: deadlock/eos-dpos-pbft:v0.3.11
+        ports:
+        - containerPort: 8888
+        - containerPort: 9876
+        envFrom:
+          - configMapRef:
+              name: n-nodes-config
+        command: ["/bin/bash", "-c"]
+        args:
+          - export profile_id=${HOSTNAME##*-} ;
+            export abc=(bpa bpb bpc bpd bpe bpf bpg bph bpi bpj bpk bpl bpm bpn) ;
+            export profile_name=${abc[$profile_id]} ;
+            nodeos --producer-name=${profile_name} ${!profile_name} ;
+---
+
+apiVersion: apps/v1
+kind: StatefulSet
+metadata:
+  name: node
+spec:
+  selector:
+    matchLabels:
+      app: nodes
+  serviceName: nodes
+  replicas: 13
+  template:
+    metadata:
+      labels:
+        app: nodes
+    spec:
+      terminationGracePeriodSeconds: 10
+      containers:
+      - name: node
+        image: deadlock/eos-dpos-pbft:v0.3.11
+        ports:
+        - containerPort: 8888
+        - containerPort: 9876
+        envFrom:
+          - configMapRef:
+              name: n-nodes-config
+        command: ["/bin/bash", "-c"]
+        args:
+          - export profile_id=${HOSTNAME##*-} ;
+            export abc=({0..20}) ;
+            export profile_name=node${abc[$profile_id]} ;
+            nodeos ${!profile_name} ;
