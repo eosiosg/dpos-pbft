@@ -24,13 +24,15 @@ cleos $remote push action eosio.token issue '["eosio", "1000000000.0000 EOS", "i
 # deploy msig contract
 cleos $remote set contract eosio.msig contracts/eosio.msig eosio.msig.wasm eosio.msig.abi -p eosio.msig
 
+# deploy system contract
+cleos $remote set contract eosio contracts/eosio.system eosio.system.wasm eosio.system.abi -p eosio
+
 cleos $remote system newaccount eosio voter EOS54HgSQ9d6qjUT7pEZgbP83zQpcymR4QW1jz2jPDEdbAeKGaUif EOS54HgSQ9d6qjUT7pEZgbP83zQpcymR4QW1jz2jPDEdbAeKGaUif --stake-net "10 EOS" --stake-cpu "10 EOS" --buy-ram-kbytes 10000
 cleos wallet import --private-key 5KE3vxAZ5tBXubjMeFJ9uCHHjfQeAzDqPLeW4XHGVcuKHPPLCrA
 cleos $remote transfer eosio voter "200000000.0000 EOS" "transfer 200M to voter"
 cleos $remote system delegatebw voter voter '100000000.0000 EOS' '100000000.0000 EOS' -p voter
 
-# deploy system contract
-cleos $remote set contract eosio contracts/eosio.system eosio.system.wasm eosio.system.abi -p eosio
+
 
 #cleos $remote push action eosio setpriv '["eosio.msig",1]' -p eosio
 

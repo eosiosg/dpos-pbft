@@ -99,6 +99,14 @@ spec:
             export abc=(bpa bpb bpc bpd bpe bpf bpg bph bpi bpj bpk bpl bpm bpn) ;
             export profile_name=${abc[$profile_id]} ;
             nodeos --producer-name=${profile_name} ${!profile_name} ;
+        volumeMounts:
+          - name: n-nodes-config-config-ini
+            mountPath: /root/.local/share/eosio/nodeos/config/config.ini
+            subPath: config.ini
+      volumes:
+        - name: n-nodes-config-config-ini
+          configMap:
+            name: n-nodes-config
 ---
 
 apiVersion: apps/v1
@@ -132,3 +140,11 @@ spec:
             export abc=({0..20}) ;
             export profile_name=node${abc[$profile_id]} ;
             nodeos ${!profile_name} ;
+        volumeMounts:
+          - name: n-nodes-config-config-ini
+            mountPath: /root/.local/share/eosio/nodeos/config/config.ini
+            subPath: config.ini
+      volumes:
+        - name: n-nodes-config-config-ini
+          configMap:
+            name: n-nodes-config

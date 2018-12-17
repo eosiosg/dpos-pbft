@@ -78,7 +78,7 @@ data:
             # resolver 127.0.0.1:53 ipv6=off;
             # set $backend_upstream "http://eosio-0.nodes.default.svc.cluster.local:8888";
             # proxy_pass $backend_upstream;
-            proxy_pass http://10.48.2.19:8888;
+            proxy_pass http://10.48.1.22:8888;
           }
         }
     }
