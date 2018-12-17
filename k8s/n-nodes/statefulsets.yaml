@@ -21,7 +21,7 @@ metadata:
 spec:
   selector:
     app: nodes
-    role: nginx
+    producer: eosio
   ports:
   - name: p2p
     protocol: TCP
@@ -30,7 +30,7 @@ spec:
   - name: api
     protocol: TCP
     port: 8888
-    targetPort: 80
+    targetPort: 8888
   type: LoadBalancer
 
 ---
@@ -51,10 +51,10 @@ spec:
         app: nodes
         producer: eosio
     spec:
-      terminationGracePeriodSeconds: 10
+      terminationGracePeriodSeconds: 1
       containers:
       - name: eosio
-        image: deadlock/eos-dpos-pbft:v0.3.11
+        image: deadlock/eos-dpos-pbft:v0.3.12
         ports:
         - containerPort: 8888
         - containerPort: 9876
@@ -77,16 +77,16 @@ spec:
     matchLabels:
       app: nodes
   serviceName: nodes
-  replicas: 13
+  replicas: 14
   template:
     metadata:
       labels:
         app: nodes
     spec:
-      terminationGracePeriodSeconds: 10
+      terminationGracePeriodSeconds: 1
       containers:
       - name: bp
-        image: deadlock/eos-dpos-pbft:v0.3.11
+        image: deadlock/eos-dpos-pbft:v0.3.12
         ports:
         - containerPort: 8888
         - containerPort: 9876
@@ -118,16 +118,16 @@ spec:
     matchLabels:
       app: nodes
   serviceName: nodes
-  replicas: 13
+  replicas: 14
   template:
     metadata:
       labels:
         app: nodes
     spec:
-      terminationGracePeriodSeconds: 10
+      terminationGracePeriodSeconds: 1
       containers:
       - name: node
-        image: deadlock/eos-dpos-pbft:v0.3.11
+        image: deadlock/eos-dpos-pbft:v0.3.12
         ports:
         - containerPort: 8888
         - containerPort: 9876

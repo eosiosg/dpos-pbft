@@ -22,23 +22,6 @@ in pre-configured network topology:
 
 the topology can be easily adjusted in k8s/n-nodes/configmap.yaml
 
-> NOTICE: direct load balance to api port 8888 is notworking due to unknown error. therefore proxy nginx is configured to provide api access. A manual configuration is required in current stage:  
-
-find eosio cluster ip adress use:
-```
-kubectl get pod -o wide
-```
-
-update nginx proxy pass ip in nginx.yaml
-```
-server {
-  location / {
-    proxy_pass http://10.48.2.19:8888; # update here to set proxy
-  }
-}
-```
-Or you can use kubectl logs -f bp-0 to view logs
-
 
 ## shuffle producer scripts is in k8s/scripts
 

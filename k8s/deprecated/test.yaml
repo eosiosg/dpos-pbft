@@ -1,0 +1,22 @@
+# apiVersion: apps/v1
+# kind: ReplicaSet
+# metadata:
+#   name: test
+# spec:
+#   selector:
+#     matchLabels:
+#       app: nodes
+#   replicas: 1
+#   template:
+#     metadata:
+#       labels:
+#         app: nodes
+#     spec:
+#       terminationGracePeriodSeconds: 1
+#       containers:
+#       - name: test
+#         image: ubuntu:18.04
+#         ports:
+#         - containerPort: 80
+#         command: [ "/bin/bash", "-c", "--" ]
+#         args: [ "while true; do sleep 30; done;" ]
