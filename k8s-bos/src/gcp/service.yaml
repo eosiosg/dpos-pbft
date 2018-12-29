@@ -1,0 +1,13 @@
+apiVersion: v1
+kind: Service
+metadata:
+  name: monitor
+spec:
+  ports:
+  - port: 80
+    targetPort: 7700
+    protocol: TCP
+  selector:
+    name: monitor
+  type: LoadBalancer
+  loadBalancerIP: "35.229.237.194"

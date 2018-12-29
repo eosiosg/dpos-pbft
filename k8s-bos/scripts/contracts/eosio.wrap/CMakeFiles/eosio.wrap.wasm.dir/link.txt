@@ -1,0 +1,1 @@
+/usr/local/eosio.cdt/bin/eosio-ld  CMakeFiles/eosio.wrap.wasm.dir/src/eosio.wrap.cpp.o -o eosio.wrap.wasm 

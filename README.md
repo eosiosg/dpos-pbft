@@ -21,8 +21,7 @@ following nodes are pre-configured:
 
 in pre-configured network topology:
 - full nodes are fully meshed
-- each full node connects to 3 bp
-- eosio connects to node-8
+- each full node connects to 3 bp and eosio
 
 the topology can be easily adjusted in k8s/n-nodes/configmap.yaml
 

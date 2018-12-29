@@ -1,0 +1,6 @@
+commonLabels:
+  app: nodes
+bases:
+- ../n-nodes
+patches:
+- statefulsets.yaml

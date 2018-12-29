@@ -1,0 +1,8 @@
+commonLabels:
+  app: nodes
+resources:
+- configmap.yaml
+- monitor.yaml
+- service.yaml
+- statefulsets.yaml
+- tps.yaml

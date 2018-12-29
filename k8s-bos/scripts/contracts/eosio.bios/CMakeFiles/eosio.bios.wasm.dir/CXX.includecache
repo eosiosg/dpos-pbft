@@ -1,0 +1,20 @@
+#IncludeRegexLine: ^[ 	]*#[ 	]*(include|import)[ 	]*[<"]([^">]+)([">])
+
+#IncludeRegexScan: ^.*$
+
+#IncludeRegexComplain: ^$
+
+#IncludeRegexTransform: 
+
+../eosio.bios/include/eosio.bios/eosio.bios.hpp
+eosiolib/crypto.h
+-
+eosiolib/eosio.hpp
+-
+eosiolib/privileged.hpp
+-
+
+/home/ubuntu/opt/bos.contracts/eosio.bios/src/eosio.bios.cpp
+eosio.bios/eosio.bios.hpp
+-
+

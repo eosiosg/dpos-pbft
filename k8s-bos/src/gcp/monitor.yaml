@@ -1,0 +1,19 @@
+apiVersion: apps/v1
+kind: ReplicaSet
+metadata:
+  name: monitor
+spec:
+  replicas: 1
+  template:
+    metadata:
+      name: monitor
+      labels:
+        app: nodes
+        name: monitor
+    spec:
+      containers:
+      - name: monitor
+        image: deadlock/node-monitor:gcp
+        imagePullPolicy: Always
+        ports:
+        - containerPort: 7700

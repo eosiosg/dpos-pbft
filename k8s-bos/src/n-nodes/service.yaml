@@ -1,0 +1,48 @@
+apiVersion: v1
+kind: Service
+metadata:
+  name: nodes
+  labels:
+    app: nodes
+spec:
+  ports:
+  - port: 8888
+    protocol: TCP
+  clusterIP: None
+  selector:
+    app: nodes
+
+---
+
+apiVersion: v1
+kind: Service
+metadata:
+  name: loadbalancer
+spec:
+  selector:
+    app: nodes
+    name: node
+  ports:
+  - name: p2p
+    protocol: TCP
+    port: 9876
+    targetPort: 9876
+  - name: api
+    protocol: TCP
+    port: 8888
+    targetPort: 8888
+  type: LoadBalancer
+
+---
+apiVersion: v1
+kind: Service
+metadata:
+  name: monitor
+spec:
+  ports:
+  - port: 80
+    targetPort: 7700
+    protocol: TCP
+  selector:
+    name: monitor
+  type: LoadBalancer

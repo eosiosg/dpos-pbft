@@ -1,0 +1,10 @@
+commonLabels:
+  app: nodes
+bases:
+- ../n-nodes
+resources:
+- storageclass.yaml
+patches:
+- statefulsets.yaml
+- storageclass.yaml
+- monitor.yaml

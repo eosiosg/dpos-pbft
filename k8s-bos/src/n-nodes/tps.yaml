@@ -1,0 +1,38 @@
+apiVersion: apps/v1
+kind: ReplicaSet
+metadata:
+  name: tps
+spec:
+  selector:
+    matchLabels:
+      app: nodes
+  replicas: 0
+  template:
+    metadata:
+      labels:
+        app: nodes
+    spec:
+      containers:
+      - name: tps
+        image: deadlock/eos-tps:v1
+        resources:
+          requests:
+            cpu: 100m
+            memory: 100Mi
+        env:
+        - name: ChainId
+          value: 'cf057bbfb72640471fd910bcb67639c22df9f92470936cddc1ade0e2f2e7dc4f'
+        - name: PRIVATE_KEY
+          value: '5KQwrPbwdL6PhXujxW37FSSQZ1JiwsST4cqQzDeyXtP79zkvFD3'
+        - name: CONTRACT_NAME
+          value: 'eosio.token'
+        - name: ENDPOINT
+          value: 'http://eosio-0.nodes.default.svc.cluster.local:8888'
+        - name: FROM
+          value: 'eosio'
+        - name: TO
+          value: 'bpa'
+        - name: QUANTITY
+          value: '0.0001 BOS'
+        - name: INTERVAL
+          value: '100'

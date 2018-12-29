@@ -220,7 +220,6 @@ data:
     --p2p-peer-address=bp-24.nodes.default.svc.cluster.local:9876
     --p2p-peer-address=bp-25.nodes.default.svc.cluster.local:9876
 
-
   config.ini: |
     # the endpoint upon which to listen for incoming connections (eosio::bnet_plugin)
     bnet-endpoint = 0.0.0.0:4321
