@@ -5,8 +5,8 @@
 SELECTED=()
 
 shuffle_and_select_bps(){
-  N=11
-  BPS=( bpa bpb bpc bpd bpe bpf bpg bph bpi bpj bpk bpl bpm bpn )
+  N=21
+  BPS=( bpa bpb bpc bpd bpe bpf bpg bph bpi bpj bpk bpl bpm bpn bpo bpp bpq bpr bps bpt bpu bpv bpw bpx bpy bpz )
   tmp=()
   for index in $(shuf --input-range=0-$(( ${#BPS[*]} - 1 )) -n ${N})
   do
@@ -23,8 +23,8 @@ while :
 do
 shuffle_and_select_bps
 cleos $remote system voteproducer prods voter  ${SELECTED[*]} -p voter
-echo "sleep 120 seconds"
-sleep 120
+echo "sleep 10 seconds"
+sleep 10
 done
 
 

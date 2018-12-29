@@ -30,6 +30,7 @@ cleos $remote set contract eosio contracts/eosio.system eosio.system.wasm eosio.
 cleos $remote system newaccount eosio voter EOS54HgSQ9d6qjUT7pEZgbP83zQpcymR4QW1jz2jPDEdbAeKGaUif EOS54HgSQ9d6qjUT7pEZgbP83zQpcymR4QW1jz2jPDEdbAeKGaUif --stake-net "10 EOS" --stake-cpu "10 EOS" --buy-ram-kbytes 10000
 cleos wallet import --private-key 5KE3vxAZ5tBXubjMeFJ9uCHHjfQeAzDqPLeW4XHGVcuKHPPLCrA
 cleos $remote transfer eosio voter "200000000.0000 EOS" "transfer 200M to voter"
+sleep 2 ;
 cleos $remote system delegatebw voter voter '100000000.0000 EOS' '100000000.0000 EOS' -p voter
 
 
@@ -37,7 +38,7 @@ cleos $remote system delegatebw voter voter '100000000.0000 EOS' '100000000.0000
 #cleos $remote push action eosio setpriv '["eosio.msig",1]' -p eosio
 
 # create bps
-ACCOUNTS="bpa bpb bpc bpd bpe bpf bpg bph bpi bpj bpk bpl bpm bpn"
+ACCOUNTS="bpa bpb bpc bpd bpe bpf bpg bph bpi bpj bpk bpl bpm bpn bpo bpp bpq bpr bps bpt bpu bpv bpw bpx bpy bpz"
 
 for acc in $ACCOUNTS
 do
@@ -60,3 +61,15 @@ cleos $remote system regproducer bpk EOS5dnfLiLQHHvBd4GqWVrVT9KtUvT1Kfm6EUMC2jXb
 cleos $remote system regproducer bpl EOS6qdG6S7Ev8uYEXD3nFxVvBU7iuP5F2WoYboZNvaG814nfgYiDN '' 0 -p bpl
 cleos $remote system regproducer bpm EOS7YyTzTxxR87hrvNtYat5UGojJGxm3ikvPQP68KMav2WBwwA9ic '' 0 -p bpm
 cleos $remote system regproducer bpn EOS6mA2BxGKbEiwDbbDPhQ1vqV4bAps49PfXuvadb8Vc4REJw1V3h '' 0 -p bpn
+cleos $remote system regproducer bpo EOS7XfCLNwreuApLd1RnTSCHwZEs3BKVDp4G5uk49en6whkjnVZ6G '' 0 -p bpo
+cleos $remote system regproducer bpp EOS7435EQ76dweLSHa4XBtwTVL9MVqGW1d9sm6SNPHkeEkDSp2e84 '' 0 -p bpp
+cleos $remote system regproducer bpq EOS5tDFbEzjpxktdCZZgH1wERjYPHajH3LcH9TVjCF6iSJ6EVAr9t '' 0 -p bpq
+cleos $remote system regproducer bpr EOS6FqJDxVzNh5CNnmktB4s2qiLzKUTH8SCjKRNTyHSYxsasdnZVA '' 0 -p bpr
+cleos $remote system regproducer bpt EOS5zcM9Dweb3s96G7eY8N1FmBP98uhdSXHgAG78kJBsqyamBDvSh '' 0 -p bpt
+cleos $remote system regproducer bps EOS6CyP5JLTnJ353wXdggayRm8wDMQ5YA3hVwSQ1rwVJ9Q9rsnT1x '' 0 -p bps
+cleos $remote system regproducer bpu EOS5GVbsUDmuuEnQFNJdoPBTNPXhzTqRFKz6d1zgRPmdrXxg6obuL '' 0 -p bpu
+cleos $remote system regproducer bpv EOS885TY14LT21h8ieV2Krxpahf17TnuCJm2wbHpWrhNcUgYUdcb3 '' 0 -p bpv
+cleos $remote system regproducer bpw EOS7zVNTpr9PfLzTYybnWMn8KsMCtpsNu842rPRMxQiAAm4KFjyn1 '' 0 -p bpw
+cleos $remote system regproducer bpx EOS8RufiWCXVUrSfGPirnS8zGp4nRkbZwX9ykakviAnrnP5i6mE9Y '' 0 -p bpx
+cleos $remote system regproducer bpy EOS54bVNK7hvwKuhyeBTTyZpucD6LkXN6Bzw5NspoTkMaojo3poch '' 0 -p bpy
+cleos $remote system regproducer bpz EOS6S5QYtt7choB6EYc7yAwUMVeBXQDhx3BR36VRhFkhwpfURr6SP '' 0 -p bpz

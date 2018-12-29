@@ -48,106 +48,171 @@ data:
   bpn: >
     --plugin=eosio::producer_plugin --plugin=eosio::pbft_plugin --plugin=eosio::chain_api_plugin  --enable-stale-production --max-transaction-time=500000 --http-server-address=0.0.0.0:8888 --http-validate-host=false --p2p-listen-endpoint=0.0.0.0:9876 --p2p-max-nodes-per-host=100
     --signature-provider=EOS6mA2BxGKbEiwDbbDPhQ1vqV4bAps49PfXuvadb8Vc4REJw1V3h=KEY:5KTB8d9RFn8g7P7dmGRaeMJMDsJKJ8icybpzkJobL5BzEtidZx9
+  bpo: >
+    --plugin=eosio::producer_plugin --plugin=eosio::pbft_plugin --plugin=eosio::chain_api_plugin  --enable-stale-production --max-transaction-time=500000 --http-server-address=0.0.0.0:8888 --http-validate-host=false --p2p-listen-endpoint=0.0.0.0:9876 --p2p-max-nodes-per-host=100
+    --signature-provider=EOS7XfCLNwreuApLd1RnTSCHwZEs3BKVDp4G5uk49en6whkjnVZ6G=KEY:5JiKSi5ADwmcR3QqGUqb6iLkoZGQ24CBNxqeo6NQAN5Dcw9AhYJ
+  bpp: >
+    --plugin=eosio::producer_plugin --plugin=eosio::pbft_plugin --plugin=eosio::chain_api_plugin  --enable-stale-production --max-transaction-time=500000 --http-server-address=0.0.0.0:8888 --http-validate-host=false --p2p-listen-endpoint=0.0.0.0:9876 --p2p-max-nodes-per-host=100
+    --signature-provider=EOS7435EQ76dweLSHa4XBtwTVL9MVqGW1d9sm6SNPHkeEkDSp2e84=KEY:5KkeCCFwGDtdzQ4fDTyYsNUTKvoGS26s6AF4X6M1ou4fF84XkcW
+  bpq: >
+    --plugin=eosio::producer_plugin --plugin=eosio::pbft_plugin --plugin=eosio::chain_api_plugin  --enable-stale-production --max-transaction-time=500000 --http-server-address=0.0.0.0:8888 --http-validate-host=false --p2p-listen-endpoint=0.0.0.0:9876 --p2p-max-nodes-per-host=100
+    --signature-provider=EOS5tDFbEzjpxktdCZZgH1wERjYPHajH3LcH9TVjCF6iSJ6EVAr9t=KEY:5JphGiyJjMSDV8TfVMtqLh21nurJvoiqnYhj3VwSXBhdRMnQd5q
+  bpr: >
+    --plugin=eosio::producer_plugin --plugin=eosio::pbft_plugin --plugin=eosio::chain_api_plugin  --enable-stale-production --max-transaction-time=500000 --http-server-address=0.0.0.0:8888 --http-validate-host=false --p2p-listen-endpoint=0.0.0.0:9876 --p2p-max-nodes-per-host=100
+    --signature-provider=EOS6FqJDxVzNh5CNnmktB4s2qiLzKUTH8SCjKRNTyHSYxsasdnZVA=KEY:5K6ufXzi8MJG4V3k1sWnNStdB1CgkaMDNBAaYEf14QyHrsaC5yS
+  bpt: >
+    --plugin=eosio::producer_plugin --plugin=eosio::pbft_plugin --plugin=eosio::chain_api_plugin  --enable-stale-production --max-transaction-time=500000 --http-server-address=0.0.0.0:8888 --http-validate-host=false --p2p-listen-endpoint=0.0.0.0:9876 --p2p-max-nodes-per-host=100
+    --signature-provider=EOS5zcM9Dweb3s96G7eY8N1FmBP98uhdSXHgAG78kJBsqyamBDvSh=KEY:5JRiGLFJ3PtdVUf3QiGPx71H7Ra55mHJj6aF5rNoefkdRgFzMPN
+  bps: >
+    --plugin=eosio::producer_plugin --plugin=eosio::pbft_plugin --plugin=eosio::chain_api_plugin  --enable-stale-production --max-transaction-time=500000 --http-server-address=0.0.0.0:8888 --http-validate-host=false --p2p-listen-endpoint=0.0.0.0:9876 --p2p-max-nodes-per-host=100
+    --signature-provider=EOS6CyP5JLTnJ353wXdggayRm8wDMQ5YA3hVwSQ1rwVJ9Q9rsnT1x=KEY:5KSQBdDzpGpppqZTVqj5ZJ7NK5gi5jcBjmResv2ofMYKc9tpZbe
+  bpu: >
+    --plugin=eosio::producer_plugin --plugin=eosio::pbft_plugin --plugin=eosio::chain_api_plugin  --enable-stale-production --max-transaction-time=500000 --http-server-address=0.0.0.0:8888 --http-validate-host=false --p2p-listen-endpoint=0.0.0.0:9876 --p2p-max-nodes-per-host=100
+    --signature-provider=EOS5GVbsUDmuuEnQFNJdoPBTNPXhzTqRFKz6d1zgRPmdrXxg6obuL=KEY:5JoHCJpb6QQXzJLv36ErzCEdussmsQRkamE8U8BR8JLicQ8mnv7
+  bpv: >
+    --plugin=eosio::producer_plugin --plugin=eosio::pbft_plugin --plugin=eosio::chain_api_plugin  --enable-stale-production --max-transaction-time=500000 --http-server-address=0.0.0.0:8888 --http-validate-host=false --p2p-listen-endpoint=0.0.0.0:9876 --p2p-max-nodes-per-host=100
+    --signature-provider=EOS885TY14LT21h8ieV2Krxpahf17TnuCJm2wbHpWrhNcUgYUdcb3=KEY:5KSjgzw2E7QvTwPg8FKMznBMx2uzJfC28Er9E9Gm35atctohDV6
+  bpw: >
+    --plugin=eosio::producer_plugin --plugin=eosio::pbft_plugin --plugin=eosio::chain_api_plugin  --enable-stale-production --max-transaction-time=500000 --http-server-address=0.0.0.0:8888 --http-validate-host=false --p2p-listen-endpoint=0.0.0.0:9876 --p2p-max-nodes-per-host=100
+    --signature-provider=EOS7zVNTpr9PfLzTYybnWMn8KsMCtpsNu842rPRMxQiAAm4KFjyn1=KEY:5JjsQUjFSbFaAokzMS8ybkfwSbZUXtYemjgx87um6VdAP4ujHPa
+  bpx: >
+    --plugin=eosio::producer_plugin --plugin=eosio::pbft_plugin --plugin=eosio::chain_api_plugin  --enable-stale-production --max-transaction-time=500000 --http-server-address=0.0.0.0:8888 --http-validate-host=false --p2p-listen-endpoint=0.0.0.0:9876 --p2p-max-nodes-per-host=100
+    --signature-provider=EOS8RufiWCXVUrSfGPirnS8zGp4nRkbZwX9ykakviAnrnP5i6mE9Y=KEY:5KjWCgvnLEaG4S7bXLT4cSsLhxXk4JYqNNnQE6m8dn1UAd2YzwV
+  bpy: >
+    --plugin=eosio::producer_plugin --plugin=eosio::pbft_plugin --plugin=eosio::chain_api_plugin  --enable-stale-production --max-transaction-time=500000 --http-server-address=0.0.0.0:8888 --http-validate-host=false --p2p-listen-endpoint=0.0.0.0:9876 --p2p-max-nodes-per-host=100
+    --signature-provider=EOS54bVNK7hvwKuhyeBTTyZpucD6LkXN6Bzw5NspoTkMaojo3poch=KEY:5Jw8P9ZE7HseSdzFWdi9zCsqomWMbni9j81UTkJbvVTX1Hue3sp
+  bpz: >
+    --plugin=eosio::producer_plugin --plugin=eosio::pbft_plugin --plugin=eosio::chain_api_plugin  --enable-stale-production --max-transaction-time=500000 --http-server-address=0.0.0.0:8888 --http-validate-host=false --p2p-listen-endpoint=0.0.0.0:9876 --p2p-max-nodes-per-host=100
+    --signature-provider=EOS6S5QYtt7choB6EYc7yAwUMVeBXQDhx3BR36VRhFkhwpfURr6SP=KEY:5JSYsCG3hsZoqsEnCDXcrUXgsgcKhtyn6YfUZig6ZiqS2iYaafs
+
   node0: >
     --plugin=eosio::chain_api_plugin --http-server-address=0.0.0.0:8888 --http-validate-host=false --p2p-listen-endpoint=0.0.0.0:9876 --p2p-max-nodes-per-host=100
-    --p2p-peer-address=eosio-0.nodes.default.svc.cluster.local:9876
-    --p2p-peer-address=bp-0.nodes.default.svc.cluster.local:9876
     --p2p-peer-address=node-0.nodes.default.svc.cluster.local:9876
+    --p2p-peer-address=node-1.nodes.default.svc.cluster.local:9876
+    --p2p-peer-address=node-2.nodes.default.svc.cluster.local:9876
+    --p2p-peer-address=node-3.nodes.default.svc.cluster.local:9876
     --p2p-peer-address=node-4.nodes.default.svc.cluster.local:9876
+    --p2p-peer-address=node-5.nodes.default.svc.cluster.local:9876
+    --p2p-peer-address=node-6.nodes.default.svc.cluster.local:9876
+    --p2p-peer-address=node-7.nodes.default.svc.cluster.local:9876
     --p2p-peer-address=node-8.nodes.default.svc.cluster.local:9876
-    --p2p-peer-address=node-12.nodes.default.svc.cluster.local:9876
+    --p2p-peer-address=bp-0.nodes.default.svc.cluster.local:9876
+    --p2p-peer-address=bp-1.nodes.default.svc.cluster.local:9876
+    --p2p-peer-address=bp-2.nodes.default.svc.cluster.local:9876
   node1: >
     --plugin=eosio::chain_api_plugin --http-server-address=0.0.0.0:8888 --http-validate-host=false --p2p-listen-endpoint=0.0.0.0:9876 --p2p-max-nodes-per-host=100
-    --p2p-peer-address=bp-1.nodes.default.svc.cluster.local:9876
     --p2p-peer-address=node-0.nodes.default.svc.cluster.local:9876
+    --p2p-peer-address=node-1.nodes.default.svc.cluster.local:9876
+    --p2p-peer-address=node-2.nodes.default.svc.cluster.local:9876
+    --p2p-peer-address=node-3.nodes.default.svc.cluster.local:9876
     --p2p-peer-address=node-4.nodes.default.svc.cluster.local:9876
+    --p2p-peer-address=node-5.nodes.default.svc.cluster.local:9876
+    --p2p-peer-address=node-6.nodes.default.svc.cluster.local:9876
+    --p2p-peer-address=node-7.nodes.default.svc.cluster.local:9876
     --p2p-peer-address=node-8.nodes.default.svc.cluster.local:9876
-    --p2p-peer-address=node-12.nodes.default.svc.cluster.local:9876
+    --p2p-peer-address=bp-3.nodes.default.svc.cluster.local:9876
+    --p2p-peer-address=bp-4.nodes.default.svc.cluster.local:9876
+    --p2p-peer-address=bp-5.nodes.default.svc.cluster.local:9876
   node2: >
     --plugin=eosio::chain_api_plugin --http-server-address=0.0.0.0:8888 --http-validate-host=false --p2p-listen-endpoint=0.0.0.0:9876 --p2p-max-nodes-per-host=100
-    --p2p-peer-address=bp-2.nodes.default.svc.cluster.local:9876
     --p2p-peer-address=node-0.nodes.default.svc.cluster.local:9876
+    --p2p-peer-address=node-1.nodes.default.svc.cluster.local:9876
+    --p2p-peer-address=node-2.nodes.default.svc.cluster.local:9876
+    --p2p-peer-address=node-3.nodes.default.svc.cluster.local:9876
     --p2p-peer-address=node-4.nodes.default.svc.cluster.local:9876
+    --p2p-peer-address=node-5.nodes.default.svc.cluster.local:9876
+    --p2p-peer-address=node-6.nodes.default.svc.cluster.local:9876
+    --p2p-peer-address=node-7.nodes.default.svc.cluster.local:9876
     --p2p-peer-address=node-8.nodes.default.svc.cluster.local:9876
-    --p2p-peer-address=node-12.nodes.default.svc.cluster.local:9876
+    --p2p-peer-address=bp-6.nodes.default.svc.cluster.local:9876
+    --p2p-peer-address=bp-7.nodes.default.svc.cluster.local:9876
+    --p2p-peer-address=bp-8.nodes.default.svc.cluster.local:9876
   node3: >
     --plugin=eosio::chain_api_plugin --http-server-address=0.0.0.0:8888 --http-validate-host=false --p2p-listen-endpoint=0.0.0.0:9876 --p2p-max-nodes-per-host=100
-    --p2p-peer-address=bp-3.nodes.default.svc.cluster.local:9876
     --p2p-peer-address=node-0.nodes.default.svc.cluster.local:9876
+    --p2p-peer-address=node-1.nodes.default.svc.cluster.local:9876
+    --p2p-peer-address=node-2.nodes.default.svc.cluster.local:9876
+    --p2p-peer-address=node-3.nodes.default.svc.cluster.local:9876
     --p2p-peer-address=node-4.nodes.default.svc.cluster.local:9876
+    --p2p-peer-address=node-5.nodes.default.svc.cluster.local:9876
+    --p2p-peer-address=node-6.nodes.default.svc.cluster.local:9876
+    --p2p-peer-address=node-7.nodes.default.svc.cluster.local:9876
     --p2p-peer-address=node-8.nodes.default.svc.cluster.local:9876
-    --p2p-peer-address=node-12.nodes.default.svc.cluster.local:9876
+    --p2p-peer-address=bp-9.nodes.default.svc.cluster.local:9876
+    --p2p-peer-address=bp-10.nodes.default.svc.cluster.local:9876
+    --p2p-peer-address=bp-11.nodes.default.svc.cluster.local:9876
   node4: >
     --plugin=eosio::chain_api_plugin --http-server-address=0.0.0.0:8888 --http-validate-host=false --p2p-listen-endpoint=0.0.0.0:9876 --p2p-max-nodes-per-host=100
-    --p2p-peer-address=bp-4.nodes.default.svc.cluster.local:9876
     --p2p-peer-address=node-0.nodes.default.svc.cluster.local:9876
+    --p2p-peer-address=node-1.nodes.default.svc.cluster.local:9876
+    --p2p-peer-address=node-2.nodes.default.svc.cluster.local:9876
+    --p2p-peer-address=node-3.nodes.default.svc.cluster.local:9876
     --p2p-peer-address=node-4.nodes.default.svc.cluster.local:9876
+    --p2p-peer-address=node-5.nodes.default.svc.cluster.local:9876
+    --p2p-peer-address=node-6.nodes.default.svc.cluster.local:9876
+    --p2p-peer-address=node-7.nodes.default.svc.cluster.local:9876
     --p2p-peer-address=node-8.nodes.default.svc.cluster.local:9876
-    --p2p-peer-address=node-12.nodes.default.svc.cluster.local:9876
+    --p2p-peer-address=bp-12.nodes.default.svc.cluster.local:9876
+    --p2p-peer-address=bp-13.nodes.default.svc.cluster.local:9876
+    --p2p-peer-address=bp-14.nodes.default.svc.cluster.local:9876
   node5: >
     --plugin=eosio::chain_api_plugin --http-server-address=0.0.0.0:8888 --http-validate-host=false --p2p-listen-endpoint=0.0.0.0:9876 --p2p-max-nodes-per-host=100
-    --p2p-peer-address=bp-5.nodes.default.svc.cluster.local:9876
     --p2p-peer-address=node-0.nodes.default.svc.cluster.local:9876
+    --p2p-peer-address=node-1.nodes.default.svc.cluster.local:9876
+    --p2p-peer-address=node-2.nodes.default.svc.cluster.local:9876
+    --p2p-peer-address=node-3.nodes.default.svc.cluster.local:9876
     --p2p-peer-address=node-4.nodes.default.svc.cluster.local:9876
+    --p2p-peer-address=node-5.nodes.default.svc.cluster.local:9876
+    --p2p-peer-address=node-6.nodes.default.svc.cluster.local:9876
+    --p2p-peer-address=node-7.nodes.default.svc.cluster.local:9876
     --p2p-peer-address=node-8.nodes.default.svc.cluster.local:9876
-    --p2p-peer-address=node-12.nodes.default.svc.cluster.local:9876
+    --p2p-peer-address=bp-15.nodes.default.svc.cluster.local:9876
+    --p2p-peer-address=bp-16.nodes.default.svc.cluster.local:9876
+    --p2p-peer-address=bp-17.nodes.default.svc.cluster.local:9876
   node6: >
     --plugin=eosio::chain_api_plugin --http-server-address=0.0.0.0:8888 --http-validate-host=false --p2p-listen-endpoint=0.0.0.0:9876 --p2p-max-nodes-per-host=100
-    --p2p-peer-address=bp-6.nodes.default.svc.cluster.local:9876
     --p2p-peer-address=node-0.nodes.default.svc.cluster.local:9876
+    --p2p-peer-address=node-1.nodes.default.svc.cluster.local:9876
+    --p2p-peer-address=node-2.nodes.default.svc.cluster.local:9876
+    --p2p-peer-address=node-3.nodes.default.svc.cluster.local:9876
     --p2p-peer-address=node-4.nodes.default.svc.cluster.local:9876
+    --p2p-peer-address=node-5.nodes.default.svc.cluster.local:9876
+    --p2p-peer-address=node-6.nodes.default.svc.cluster.local:9876
+    --p2p-peer-address=node-7.nodes.default.svc.cluster.local:9876
     --p2p-peer-address=node-8.nodes.default.svc.cluster.local:9876
-    --p2p-peer-address=node-12.nodes.default.svc.cluster.local:9876
+    --p2p-peer-address=bp-18.nodes.default.svc.cluster.local:9876
+    --p2p-peer-address=bp-19.nodes.default.svc.cluster.local:9876
+    --p2p-peer-address=bp-20.nodes.default.svc.cluster.local:9876
   node7: >
     --plugin=eosio::chain_api_plugin --http-server-address=0.0.0.0:8888 --http-validate-host=false --p2p-listen-endpoint=0.0.0.0:9876 --p2p-max-nodes-per-host=100
-    --p2p-peer-address=bp-7.nodes.default.svc.cluster.local:9876
     --p2p-peer-address=node-0.nodes.default.svc.cluster.local:9876
+    --p2p-peer-address=node-1.nodes.default.svc.cluster.local:9876
+    --p2p-peer-address=node-2.nodes.default.svc.cluster.local:9876
+    --p2p-peer-address=node-3.nodes.default.svc.cluster.local:9876
     --p2p-peer-address=node-4.nodes.default.svc.cluster.local:9876
+    --p2p-peer-address=node-5.nodes.default.svc.cluster.local:9876
+    --p2p-peer-address=node-6.nodes.default.svc.cluster.local:9876
+    --p2p-peer-address=node-7.nodes.default.svc.cluster.local:9876
     --p2p-peer-address=node-8.nodes.default.svc.cluster.local:9876
-    --p2p-peer-address=node-12.nodes.default.svc.cluster.local:9876
+    --p2p-peer-address=bp-21.nodes.default.svc.cluster.local:9876
+    --p2p-peer-address=bp-22.nodes.default.svc.cluster.local:9876
+    --p2p-peer-address=bp-23.nodes.default.svc.cluster.local:9876
   node8: >
     --plugin=eosio::chain_api_plugin --http-server-address=0.0.0.0:8888 --http-validate-host=false --p2p-listen-endpoint=0.0.0.0:9876 --p2p-max-nodes-per-host=100
-    --p2p-peer-address=bp-8.nodes.default.svc.cluster.local:9876
     --p2p-peer-address=node-0.nodes.default.svc.cluster.local:9876
+    --p2p-peer-address=node-1.nodes.default.svc.cluster.local:9876
+    --p2p-peer-address=node-2.nodes.default.svc.cluster.local:9876
+    --p2p-peer-address=node-3.nodes.default.svc.cluster.local:9876
     --p2p-peer-address=node-4.nodes.default.svc.cluster.local:9876
+    --p2p-peer-address=node-5.nodes.default.svc.cluster.local:9876
+    --p2p-peer-address=node-6.nodes.default.svc.cluster.local:9876
+    --p2p-peer-address=node-7.nodes.default.svc.cluster.local:9876
     --p2p-peer-address=node-8.nodes.default.svc.cluster.local:9876
-    --p2p-peer-address=node-12.nodes.default.svc.cluster.local:9876
-  node9: >
-    --plugin=eosio::chain_api_plugin --http-server-address=0.0.0.0:8888 --http-validate-host=false --p2p-listen-endpoint=0.0.0.0:9876 --p2p-max-nodes-per-host=100
-    --p2p-peer-address=bp-9.nodes.default.svc.cluster.local:9876
-    --p2p-peer-address=node-0.nodes.default.svc.cluster.local:9876
-    --p2p-peer-address=node-4.nodes.default.svc.cluster.local:9876
-    --p2p-peer-address=node-8.nodes.default.svc.cluster.local:9876
-    --p2p-peer-address=node-12.nodes.default.svc.cluster.local:9876
-  node10: >
-    --plugin=eosio::chain_api_plugin --http-server-address=0.0.0.0:8888 --http-validate-host=false --p2p-listen-endpoint=0.0.0.0:9876 --p2p-max-nodes-per-host=100
-    --p2p-peer-address=bp-10.nodes.default.svc.cluster.local:9876
-    --p2p-peer-address=node-0.nodes.default.svc.cluster.local:9876
-    --p2p-peer-address=node-4.nodes.default.svc.cluster.local:9876
-    --p2p-peer-address=node-8.nodes.default.svc.cluster.local:9876
-    --p2p-peer-address=node-12.nodes.default.svc.cluster.local:9876
-  node11: >
-    --plugin=eosio::chain_api_plugin --http-server-address=0.0.0.0:8888 --http-validate-host=false --p2p-listen-endpoint=0.0.0.0:9876 --p2p-max-nodes-per-host=100
-    --p2p-peer-address=bp-11.nodes.default.svc.cluster.local:9876
-    --p2p-peer-address=node-0.nodes.default.svc.cluster.local:9876
-    --p2p-peer-address=node-4.nodes.default.svc.cluster.local:9876
-    --p2p-peer-address=node-8.nodes.default.svc.cluster.local:9876
-    --p2p-peer-address=node-12.nodes.default.svc.cluster.local:9876
-  node12: >
-    --plugin=eosio::chain_api_plugin --http-server-address=0.0.0.0:8888 --http-validate-host=false --p2p-listen-endpoint=0.0.0.0:9876 --p2p-max-nodes-per-host=100
-    --p2p-peer-address=bp-12.nodes.default.svc.cluster.local:9876
-    --p2p-peer-address=node-0.nodes.default.svc.cluster.local:9876
-    --p2p-peer-address=node-4.nodes.default.svc.cluster.local:9876
-    --p2p-peer-address=node-8.nodes.default.svc.cluster.local:9876
-    --p2p-peer-address=node-12.nodes.default.svc.cluster.local:9876
-  node13: >
-    --plugin=eosio::chain_api_plugin --http-server-address=0.0.0.0:8888 --http-validate-host=false --p2p-listen-endpoint=0.0.0.0:9876 --p2p-max-nodes-per-host=100
-    --p2p-peer-address=bp-13.nodes.default.svc.cluster.local:9876
-    --p2p-peer-address=node-0.nodes.default.svc.cluster.local:9876
-    --p2p-peer-address=node-4.nodes.default.svc.cluster.local:9876
-    --p2p-peer-address=node-8.nodes.default.svc.cluster.local:9876
-    --p2p-peer-address=node-12.nodes.default.svc.cluster.local:9876
-  config.ini: >
+    --p2p-peer-address=bp-24.nodes.default.svc.cluster.local:9876
+    --p2p-peer-address=bp-25.nodes.default.svc.cluster.local:9876
+    --p2p-peer-address=eosio-0.nodes.default.svc.cluster.local:9876
+
+  config.ini: |
     # the endpoint upon which to listen for incoming connections (eosio::bnet_plugin)
     bnet-endpoint = 0.0.0.0:4321
 
