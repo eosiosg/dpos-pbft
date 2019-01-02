@@ -18,11 +18,11 @@ spec:
       containers:
       - name: eosio
         image: deadlock/eos-dpos-pbft:v0.4.8
-        # resources:
-        #   limits:
-        #     cpu: "1"
-        #   requests:
-        #     cpu: "1"
+        resources:
+          limits:
+            cpu: "1"
+          requests:
+            cpu: "0.1"
         ports:
         - containerPort: 8888
         - containerPort: 9876
@@ -67,11 +67,11 @@ spec:
       containers:
       - name: bp
         image: deadlock/eos-dpos-pbft:v0.4.8
-        # resources:
-        #   limits:
-        #     cpu: "1"
-        #   requests:
-        #     cpu: "1"
+        resources:
+          limits:
+            cpu: "1"
+          requests:
+            cpu: "0.1"
         ports:
         - containerPort: 8888
         - containerPort: 9876
@@ -134,11 +134,11 @@ spec:
       containers:
       - name: node
         image: deadlock/eos-dpos-pbft:v0.4.8
-        # resources:
-        #   limits:
-        #     cpu: "1"
-        #   requests:
-        #     cpu: "1"
+        resources:
+          limits:
+            cpu: "1"
+          requests:
+            cpu: "0.1"
         ports:
         - containerPort: 8888
         - containerPort: 9876

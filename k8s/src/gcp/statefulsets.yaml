@@ -13,7 +13,7 @@ spec:
       terminationGracePeriodSeconds: 600
       containers:
       - name: eosio
-        image: deadlock/eos-dpos-pbft:v0.5.2
+        image: deadlock/eos-dpos-pbft:v0.5.5
         volumeMounts:
         - name: data-dir
           mountPath: /root/.local/share/eosio/nodeos/data
@@ -48,7 +48,7 @@ spec:
       terminationGracePeriodSeconds: 600
       containers:
       - name: bp
-        image: deadlock/eos-dpos-pbft:v0.5.2
+        image: deadlock/eos-dpos-pbft:v0.5.5
         volumeMounts:
           - name: n-nodes-config-config-ini
             mountPath: /root/.local/share/eosio/nodeos/config/config.ini
@@ -87,10 +87,10 @@ spec:
       labels:
         app: nodes
     spec:
-      terminationGracePeriodSeconds: 1
+      terminationGracePeriodSeconds: 600
       containers:
       - name: node
-        image: deadlock/eos-dpos-pbft:v0.5.2
+        image: deadlock/eos-dpos-pbft:v0.5.5
         volumeMounts:
           - name: n-nodes-config-config-ini
             mountPath: /root/.local/share/eosio/nodeos/config/config.ini
