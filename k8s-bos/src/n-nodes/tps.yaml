@@ -21,7 +21,7 @@ spec:
             memory: 100Mi
         env:
         - name: ChainId
-          value: 'cf057bbfb72640471fd910bcb67639c22df9f92470936cddc1ade0e2f2e7dc4f'
+          value: '0365870660fa09c7fe15870aeab6a30cf89aef6f96a9765ab63f2588b388eacf'
         - name: PRIVATE_KEY
           value: '5KQwrPbwdL6PhXujxW37FSSQZ1JiwsST4cqQzDeyXtP79zkvFD3'
         - name: CONTRACT_NAME

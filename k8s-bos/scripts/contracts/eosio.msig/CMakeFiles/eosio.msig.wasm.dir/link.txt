@@ -1,1 +1,0 @@
-/usr/local/eosio.cdt/bin/eosio-ld  CMakeFiles/eosio.msig.wasm.dir/src/eosio.msig.cpp.o -o eosio.msig.wasm 

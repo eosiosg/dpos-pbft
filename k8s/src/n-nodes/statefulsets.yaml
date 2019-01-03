@@ -22,7 +22,7 @@ spec:
           limits:
             cpu: "1"
           requests:
-            cpu: "0.1"
+            cpu: "0.01"
         ports:
         - containerPort: 8888
         - containerPort: 9876
@@ -71,7 +71,7 @@ spec:
           limits:
             cpu: "1"
           requests:
-            cpu: "0.1"
+            cpu: "0.01"
         ports:
         - containerPort: 8888
         - containerPort: 9876
@@ -138,7 +138,7 @@ spec:
           limits:
             cpu: "1"
           requests:
-            cpu: "0.1"
+            cpu: "0.01"
         ports:
         - containerPort: 8888
         - containerPort: 9876

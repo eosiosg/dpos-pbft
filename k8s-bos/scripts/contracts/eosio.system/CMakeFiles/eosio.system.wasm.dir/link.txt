@@ -1,1 +1,0 @@
-/usr/local/eosio.cdt/bin/eosio-ld  CMakeFiles/eosio.system.wasm.dir/src/eosio.system.cpp.o -o eosio.system.wasm 

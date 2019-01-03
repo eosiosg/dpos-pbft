@@ -5,8 +5,10 @@
 SELECTED=()
 
 shuffle_and_select_bps(){
-  N=21
-  BPS=( bpa bpb bpc bpd bpe bpf bpg bph bpi bpj bpk bpl bpm bpn bpo bpp bpq bpr bps bpt bpu bpv bpw bpx bpy bpz )
+  N=7
+  # N=21
+  # BPS=( bpa bpb bpc bpd bpe bpf bpg bph bpi bpj bpk bpl bpm bpn bpo bpp bpq bpr bps bpt bpu bpv bpw bpx bpy bpz )
+  BPS=( bpa bpb bpc bpd bpe bpf bpg bph bpi )
   tmp=()
   for index in $(shuf --input-range=0-$(( ${#BPS[*]} - 1 )) -n ${N})
   do

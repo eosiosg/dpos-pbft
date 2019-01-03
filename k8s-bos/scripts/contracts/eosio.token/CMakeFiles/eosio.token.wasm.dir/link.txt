@@ -1,1 +1,0 @@
-/usr/local/eosio.cdt/bin/eosio-ld  CMakeFiles/eosio.token.wasm.dir/src/eosio.token.cpp.o -o eosio.token.wasm 

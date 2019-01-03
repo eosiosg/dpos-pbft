@@ -1,5 +1,5 @@
 {
-    "____comment": "This file was generated with eosio-abigen. DO NOT EDIT Sat Nov 24 16:47:21 2018",
+    "____comment": "This file was generated with eosio-abigen. DO NOT EDIT Thu Dec 13 11:20:50 2018",
     "version": "eosio::abi/1.1",
     "structs": [
         {
@@ -431,7 +431,7 @@
             ]
         },
         {
-            "name": "eosio_min_guarantee",
+            "name": "eosio_guaranteed_min_res",
             "base": "",
             "fields": [
                 {
@@ -865,7 +865,7 @@
             ]
         },
         {
-            "name": "setminguar",
+            "name": "setguaminres",
             "base": "",
             "fields": [
                 {
@@ -1222,8 +1222,8 @@
             "ricardian_contract": ""
         },
         {
-            "name": "setminguar",
-            "type": "setminguar",
+            "name": "setguaminres",
+            "type": "setguaminres",
             "ricardian_contract": ""
         },
         {
@@ -1321,8 +1321,8 @@
             "key_types": []
         },
         {
-            "name": "minguar",
-            "type": "eosio_min_guarantee",
+            "name": "guaranminres",
+            "type": "eosio_guaranteed_min_res",
             "index_type": "i64",
             "key_names": [],
             "key_types": []

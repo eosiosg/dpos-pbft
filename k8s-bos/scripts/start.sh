@@ -21,11 +21,13 @@ cleos $remote set contract eosio.token ./contracts/eosio.token eosio.token.wasm 
 cleos $remote push action eosio.token create '["eosio", "10000000000.0000 BOS", 0, 0, 0]' -p eosio.token
 cleos $remote push action eosio.token issue '["eosio", "1000000000.0000 BOS", "issue 1B to eosio"]' -p eosio
 
+
 # deploy msig contract
 cleos $remote set contract eosio.msig ./contracts/eosio.msig eosio.msig.wasm eosio.msig.abi -p eosio.msig
 
 # deploy system contract
 cleos $remote set contract eosio ./contracts/eosio.system eosio.system.wasm eosio.system.abi -p eosio
+cleos $remote push action eosio init '{"version": 0, "core": "4,BOS"}' -p eosio
 
 cleos $remote system newaccount eosio voter EOS54HgSQ9d6qjUT7pEZgbP83zQpcymR4QW1jz2jPDEdbAeKGaUif EOS54HgSQ9d6qjUT7pEZgbP83zQpcymR4QW1jz2jPDEdbAeKGaUif --stake-net "10 BOS" --stake-cpu "10 BOS" --buy-ram-kbytes 10000
 cleos wallet import --private-key 5KE3vxAZ5tBXubjMeFJ9uCHHjfQeAzDqPLeW4XHGVcuKHPPLCrA
